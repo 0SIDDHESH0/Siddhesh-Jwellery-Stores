@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/favicon.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Siddhesh Design</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- card stylesheet -->
+  <link href="css/card.css" rel="stylesheet" />
+  <!-- remix icon cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS CSS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- header section strats -->
+  <header class="header_section innerpage_header">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+          <span>
+            Company Name
+          </span>
+        </a>
+        <div class="" id="">
+
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="shop.html">Shop</a>
+                <a href="blog.html">Blog</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
+
+  <!-- card section -->
+
+  <section class="card_section layout_padding">
+    <div class="container my-5">
+        <div class="row" data-aos="fade-up">
+            <div class="col-md-12 main-description cnt_mob">
+                <div class="category text-bold">
+                    Category: Necklace
+                </div>
+                <div class="product-title text-bold my-3">
+                    Diamond Necklace
+                </div>
+            </div>
+            <div class="col-md-5 mr-5 col-12">
+                <div class="main-img">
+                    <img class="img-fluid zoom" id="img_main" src="images/p1.png" alt="ProductS">
+                    <div class="row my-5 previews">
+                        <div class="col-md-3">
+                            <img class="w-100 zoomout" src="https://th.bing.com/th/id/OIP._DxVdkVeJ_QaBkuDYs5ptgHaHa?pid=ImgDet&w=157&h=157&c=7" alt="Sale">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="w-100 zoomout" src="https://th.bing.com/th/id/OIP.jrqzTbIlyrnPTXqEDCofagHaId?pid=ImgDet&w=157&h=179&c=7" alt="Sale">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="w-100 zoomout" src="https://th.bing.com/th/id/OIP.jrqzTbIlyrnPTXqEDCofagHaId?pid=ImgDet&w=157&h=179&c=7" alt="Sale">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="w-100 zoomout" src="https://th.bing.com/th/id/OIP._DxVdkVeJ_QaBkuDYs5ptgHaHa?pid=ImgDet&w=157&h=157&c=7" alt="Sale">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="main-description px-2">
+                    <div class="category text-bold hide_pc">
+                        Category: Necklace
+                    </div>
+                    <div class="product-title text-bold my-3 hide_pc">
+                        Diamond Necklace
+                    </div>
+                    <div class="price-area my-4">
+                        <p class="old-price mb-1">Price <del>₹25,0000</del> <span class="old-price-discount text-success">(25% off)</span></p>
+                        <span class="new-price text mb-1">Price ₹<input type="text" value="20,000" id="product_price" disabled style="background: transparent; outline: none; border: none; color: initial;"></span>
+                        <p class="text-secondary mb-1">(Incluing all taxes.)</p>
+                    </div>
+                    <div class="buttons d-flex my-5">
+                        <div class="counter">
+                            <h6>Quantity</h6>
+                            <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                            <input type="text" value="1" id="quantity_value">
+                            <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                          </div>
+                    </div>
+                    <div class="card_section_btn">
+                        <a href="" id="c_btn">
+                            Contact Us
+                          </a>
+                          <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_NGXjYOy7obEfRw" async> </script> </form>
+                      </div>
+                </div>
+                <div class="product-details my-4">
+                    <p class="details-title text-color mb-1">Product Details</p>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat excepturi odio recusandae aliquid ad impedit autem commodi earum voluptatem laboriosam? </p>
+                </div>  
+                <div class="row questions bg-light p-3 mb-4">
+                    <div class="col-md-1 icon">
+                        <i class="fa-brands fa-rocketchat questions-icon"></i>
+                    </div>
+                    <div class="col-md-11 text-center">
+                        Have a question about our products at E-Store? <br> Feel free to contact our email.
+                    </div>
+                </div>
+                <div class="delivery my-4">
+                    <p class="font-weight-bold mb-0"><span><i class="ri-truck-line"></i></span> <b>Delivery done in 3 days from date of purchase</b> </p>
+                    <p class="text-secondary">Order now to get this product delivery</p>
+                </div>
+                <div class="delivery-options my-4">
+                    <p class="font-weight-bold mb-0"><span><i class="ri-filter-2-line"></i></span> <b>Delivery options</b> </p>
+                    <p class="text-secondary">View delivery options here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container similar-products my-4" data-aos="flip-up">
+        <hr>
+        <p class="display-5">Similar Products</p>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a href="chain.html">
+                    <div class="similar-product">
+                        <img class="w-100 zoom" src="images/p2.png" alt="Preview">
+                        <p class="title">Gold Chain</p>
+                        <p class="price">₹10,000</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <div class="similar-product">
+                    <img class="w-100 zoom" src="images/p3.png" alt="Preview">
+                    <p class="title">Lovely Dress with patterns</p>
+                    <p class="price">$85</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="similar-product">
+                    <img class="w-100 zoom" src="images/p7.png" alt="Preview">
+                    <p class="title">Lovely fashion dress</p>
+                    <p class="price">$200</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="similar-product">
+                    <img class="w-100 zoom" src="images/p8.png" alt="Preview">
+                    <p class="title">Lovely red dress</p>
+                    <p class="price">$120</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- end card section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row info_form_social_row">
+        <div class="col-md-8 col-lg-9" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+          <div class="info_form">
+            <form action="">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+
+          <div class="social_box" data-aos="zoom-in">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row info_main_row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_links">
+            <h4>
+              Menu
+            </h4>
+            <div class="info_links_menu">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="shop.html">Shop</a>
+              <a href="blog.html">Blog</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_insta">
+            <h4>
+              Instagram
+            </h4>
+            <div class="insta_box">
+              <div class="img-box">
+                <img src="images/p1.png" alt="">
+              </div>
+              <p>
+                long established fact that a reader
+              </p>
+            </div>
+            <div class="insta_box">
+              <div class="img-box">
+                <img src="images/p2.png" alt="">
+              </div>
+              <p>
+                long established fact that a reader
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_detail">
+            <h4>
+              About Us
+            </h4>
+            <p class="mb-0">
+              when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4>
+            Contact Us
+          </h4>
+          <div class="info_contact">
+            <a href="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Location
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call +01 1234567890
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-envelope"></i>
+              <span>
+                demo@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Siddhesh Design</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- quantity js -->
+  <script type="text/javascript">
+    function increaseCount(a, b) {
+      var input = b.previousElementSibling;
+      var value = parseInt(input.value, 10); 
+      value = isNaN(value)? 0 : value;
+      value ++;
+      input.value = value;
+    }
+    function decreaseCount(a, b) {
+      var input = b.nextElementSibling;
+      var value = parseInt(input.value, 10); 
+      if (value > 1) {
+        value = isNaN(value)? 0 : value;
+        value --;
+        input.value = value;
+      }
+    }
+  </script>
+  <!-- main js -->
+  <script src="js/main.js"></script>
+  <!-- AOS js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- AOS init -->
+  <script>AOS.init();</script>
+</body>
+
+</html>
